@@ -1,0 +1,95 @@
+/* App.css */
+
+body {
+  font-family: monospace;
+  background-color: #f0f0f0;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+.container {
+  background-color: #fff;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  width: 400px;
+}
+
+.header {
+  text-align: center;
+  color: #333;
+  font-size: 24px;
+  margin-bottom: 20px;
+}
+
+.container > div {
+  margin-bottom: 16px; /* Add margin between child divs */
+}
+
+.container label {
+  display: block;
+  margin-bottom: 8px; /* Adjusted margin between labels */
+}
+
+.container input[type="text"],
+.container input[type="number"],
+.container input[type="password"],
+.container input[type="checkbox"] {
+  width: calc(50% - 10px); /* Adjusted width for two checkboxes per row */
+  padding: 8px;
+  font-size: 14px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  margin-bottom: 8px; /* Increased margin between fields */
+}
+
+.checkbox-container {
+  display: flex;
+  justify-content: space-between;
+}
+
+.checkbox-label {
+  width: 48%; /* Adjusted width for each checkbox label */
+}
+
+.container button {
+  background-color: #0056b3; /* Professional shade of blue */
+  color: #fff;
+  border: none;
+  padding: 12px 24px; /* Increased padding for more prominent buttons */
+  font-size: 16px; /* Increased font size */
+  cursor: pointer;
+  border-radius: 8px; /* Adjusted border radius */
+  margin-top: 10px;
+  transition: background-color 0.3s, transform 0.3s; /* Smooth transitions */
+}
+
+.container button:hover {
+  background-color: #004494; /* Darker blue for hover effect */
+  transform: scale(1.05); /* Slightly increase the size on hover */
+}
+
+.container button:active {
+  background-color: #003366; /* Even darker blue for active state */
+  transform: scale(1); /* Reset the size on click */
+}
+
+.container button:focus {
+  outline: none;
+  box-shadow: 0 0 0 3px rgba(0, 86, 179, 0.5); /* Outline for focus */
+}
+
+.container p {
+  margin-top: 10px;
+  font-size: 14px;
+  color: #888;
+}
+
+.container input[type="text"][readonly] {
+  background-color: #f0f0f0;
+  cursor: not-allowed;
+}

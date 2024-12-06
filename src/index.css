@@ -1,0 +1,22 @@
+/* index.css */
+
+/* Reset default browser styles */
+html, body, #root {
+  height: 100%;
+  margin: 0;
+  padding: 0;
+}
+
+/* Apply a background color to the body or root element */
+body {
+  background-color: #f0f0f0;
+}
+
+/* Center content vertically and horizontally */
+#root {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/* Optionally, apply additional global styles here */
